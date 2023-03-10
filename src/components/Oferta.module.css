@@ -1,0 +1,75 @@
+.oferta{
+    width: 100%;
+    height: 700px;
+    background-image: url(../assets/banner2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+.oferta:before, nav {
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.oferta::before{
+    background: radial-gradient(circle, rgb(229 255 0 / 25%) 0%, rgba(232,255,49,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.oferta h1, .oferta p {
+    position: relative;
+    top: 40%;
+    color: #fff;
+    font-family: Lato;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.oferta p {
+    font-size: 2.7rem;
+}
+.oferta h1 {
+    font-size: 5rem;
+}
+.oferta span {
+    color: rgb(223, 223, 0);
+}
+.oferta button{
+    position: absolute;
+    top: 500px;
+    width: 200px;
+    display: block;
+    padding: 20px;
+    background-color: rgb(223, 223, 0);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    border: none;
+}
+.oferta button:hover{
+    background-color: black;
+    border: solid 2px yellow;
+    color: white;
+    padding: 19px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+/* Mobile Layout ****************/
+
+@media (max-width:768px){
+
+    .oferta h1 {
+        font-size: 3rem;
+    }
+    .oferta{
+        width: 100%;
+    }
+}

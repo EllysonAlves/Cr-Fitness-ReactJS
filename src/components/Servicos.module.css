@@ -1,0 +1,38 @@
+.boxCards{
+    display: flex;
+    justify-content: space-around;
+}
+.servicos{
+    width: 100%;
+    background-color: black;
+}
+.servicos h2{
+    margin-top: 50px;
+    color: white;
+    font-size: 2.7rem;
+}
+.servicos span{
+    color: rgb(223, 223, 0);
+}
+.titulo{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+@media (max-width:768px){
+
+    .servicos{
+        text-align: center;
+    }
+    .boxCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicos h2{
+        font-size: 2rem;
+    }
+    .titulo{
+        text-align: center;
+    }
+}
